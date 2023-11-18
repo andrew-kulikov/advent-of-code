@@ -128,12 +128,12 @@ fn main() {
 }
 
 fn solve(version: CraneVersion) {
-    let initial_state: Vec<&str> = include_str!("../data/input.txt")
+    let initial_state: Vec<&str> = include_str!("../input.txt")
         .lines()
         .take_while(|s| !s.is_empty())
         .collect();
 
-    let moves: Vec<CraneMove> = include_str!("../data/input.txt")
+    let moves: Vec<CraneMove> = include_str!("../input.txt")
         .lines()
         .filter(|s| s.starts_with("move"))
         .map(|s| s.parse::<CraneMove>().unwrap())

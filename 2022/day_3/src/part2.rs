@@ -2,7 +2,7 @@ use iterchunks::IterArrayChunks;
 use std::collections::{HashMap, HashSet};
 
 pub fn solve() {
-    let total: i32 = include_str!("../data/input.txt")
+    let total: i32 = include_str!("../input.txt")
         .lines()
         .array_chunks::<3>()
         .map(|batch| {

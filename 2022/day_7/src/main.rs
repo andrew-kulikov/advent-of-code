@@ -303,7 +303,7 @@ fn main() {
         current_command: None,
     };
 
-    include_str!("../data/input.txt")
+    include_str!("../input.txt")
         .lines()
         .for_each(|line| context.apply_output_line(line));
 

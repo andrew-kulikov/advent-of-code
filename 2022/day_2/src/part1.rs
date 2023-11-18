@@ -6,7 +6,7 @@ const PLAYER_PAPER: &str = "Y";
 const PLAYER_SCISSORS: &str = "Z";
 
 pub fn solve_part_1() {
-    let total: i32 = include_str!("../data/input.txt")
+    let total: i32 = include_str!("../input.txt")
         .lines()
         .map(|l| calculate_round_total(l))
         .sum();

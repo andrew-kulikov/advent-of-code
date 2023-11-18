@@ -34,7 +34,7 @@ impl PairAssignment {
 
 fn main() {
     // In part1 we need to calculate amount of pairs where one of elves fully covers other's range
-    let full_cover_count = include_str!("../data/input.txt")
+    let full_cover_count = include_str!("../input.txt")
         .lines()
         .map(|l| parse_pair_assignment(l))
         .filter(|assignment| {
@@ -47,7 +47,7 @@ fn main() {
         .count();
     
     // In part2 we need to calculate amount of pairs where elves ranges overlaps
-    let overlap_count = include_str!("../data/input.txt")
+    let overlap_count = include_str!("../input.txt")
         .lines()
         .map(|l| parse_pair_assignment(l))
         .filter(|assignment| {

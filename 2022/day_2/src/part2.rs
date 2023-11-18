@@ -6,7 +6,7 @@ const REQUIRE_DRAW: &str = "Y";
 const REQUIRE_WIN: &str = "Z";
 
 pub fn solve_part_2() {
-    let total: i32 = include_str!("../data/input.txt")
+    let total: i32 = include_str!("../input.txt")
         .lines()
         .map(|l| calculate_round_total(l))
         .sum();

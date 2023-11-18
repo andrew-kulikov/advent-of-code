@@ -3,7 +3,7 @@ use std::io::{self, BufRead};
 use std::path::Path;
 
 fn main() {
-    if let Ok(lines) = read_lines("./data/input.txt") {
+    if let Ok(lines) = read_lines("./input.txt") {
         let batches = read_buckets(lines);
         let mut elves_totals = calculate_elves_totals(batches);
 

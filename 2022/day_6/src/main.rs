@@ -6,7 +6,7 @@ use iterwindows::IterArrayWindows;
 const BATCH_SIZE: usize = 14;
 
 fn main() {
-    let result: Vec<usize> = include_str!("../data/input.txt")
+    let result: Vec<usize> = include_str!("../input.txt")
         .lines()
         .map(|l| solve(l))
         .collect();

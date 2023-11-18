@@ -1,7 +1,7 @@
 use std::collections::HashSet;
 
 pub fn solve() {
-    let total: i32 = include_str!("../data/input.txt")
+    let total: i32 = include_str!("../input.txt")
         .lines()
         .map(|l| find_duplicated_item(l))
         .map(|i| get_item_weight(i) as i32)
